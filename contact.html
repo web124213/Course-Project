@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свържете се с нас за повече информация за недвижимите имоти.">
+    <meta name="keywords" content="контакти, форма за контакт, карта">
+    <meta name="author" content="Dayana Yordanova">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="Company Logo">
+    </a>
+</div>
+            <h1>Контакти</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="properties.html">Имоти</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>Форма за контакт</h2>
+                <form id="contactForm" action="submit_contact.php" method="POST">
+                    <label for="name">Име:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Съобщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                   
+ 
+    <button type="submit" class="btn" id="submitButton">Изпрати</button>
+ </form>
+            </div>
+            <div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <p>Запитването е изпратено, ще се свържем с вас скоро.</p>
+    </div>
+</div>     
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h2>Нашето местоположение</h2>
+                <div class="map-container">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.020427338795!2d27.921026075817455!3d43.20906088104368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4540939dfa6d5%3A0x3d401ef3c09a59bf!2z0JjQutC-0L3QvtC80LjRh9C10YHQutC4INGD0L3QuNCy0LXRgNGB0LjRgtC10YIgLSDQktCw0YDQvdCw!5e0!3m2!1sbg!2sbg!4v1735785253227!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="container">
+        <p>&copy; 2025 Недвижими имоти | <a href="privacy.html">Privacy Policy</a></p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> бул. „Княз Борис“ 1, ет. 4, офис 8, Варна</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+359875336767">+359 87 533 6767</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:estate@dayana.com">estate@dayana.com</a></p>
+            <p><i class="fas fa-clock"></i> Понеделник - Петък, 09:00 - 18:30</p>
+        </div>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

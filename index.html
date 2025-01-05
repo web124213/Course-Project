@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уеб сайт за наемане и продажба на недвижими имоти">
+    <meta name="keywords" content="недвижими имоти, продажба, наемане, апартаменти, къщи">
+    <meta name="author" content="Dayana Yordanova">
+    <title>Недвижими имоти</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+	
+    <header>
+        <div class="container">
+        	<div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="Company Logo">
+    </a>
+</div>
+            <h1>Недвижими имоти</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="properties.html">Имоти</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Намерете своя дом с нас</h2>
+                <p>Продажба и наем на апартаменти, къщи и парцели в цяла България.</p>
+                <a href="properties.html" class="btn">Разгледай офертите</a>
+            </div>
+        </section>
+
+       
+        <section class="search-form">
+            <div class="container">
+                <h2>Търсене на имоти</h2>
+                <form id="property-search">
+                    <label for="property-type">Тип на имота:</label>
+                    <select id="property-type" name="property-type">
+                        <option value="едностаен">Едностаен</option>
+                        <option value="двустаен">Двустаен</option>
+                        <option value="тристаен">Тристаен</option>
+                        <option value="многостаен">Многостаен</option>
+                        <option value="мезонет">Мезонет</option>
+                    </select>
+
+                    <label for="deal-type">Тип сделка:</label>
+                    <select id="deal-type" name="deal-type">
+                        <option value="продажба">Продажба</option>
+                        <option value="наем">Наем</option>
+                    </select>
+
+                    <label for="city">Град:</label>
+                    <select id="city" name="city">
+                        <option value="varna">Варна</option>
+                        <option value="sofia">София</option>
+                    </select>
+
+                    <label for="area">Район:</label>
+                    <select id="area" name="area">
+                        <option value="">Изберете град първо</option>
+                    </select>
+
+                    <label for="price-from">Цена от:</label>
+                    <input type="number" id="price-from" name="price-from" placeholder="Минимална цена">
+
+                    <label for="price-to">Цена до:</label>
+                    <input type="number" id="price-to" name="price-to" placeholder="Максимална цена">
+
+                    <button type="submit" class="btn">Търсене</button>
+                </form>
+            </div>
+        </section>
+
+       
+        <section class="offers">
+            <div class="container">
+                <h2>Примерни оферти за продажба</h2>
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <img src="offer1.jpg" alt="Апартамент 1">
+                        <h3>Двустаен апартамент, Варна</h3>
+                        <p>Център, 120 000 лв.</p>
+                        <a href="properties.html#sales" class="btn">Виж повече</a>
+                    </div>
+                    <div class="offer-item">
+                        <img src="offer2.jpg" alt="Апартамент 2">
+                        <h3>Тристаен апартамент, София</h3>
+                        <p>Младост, 150 000 лв.</p>
+                        <a href="properties.html#sales" class="btn">Виж повече</a>
+                    </div>
+ 
+                     <div class="offer-item">
+                        <img src="offer3.jpg" alt="Апартамент 2">
+                        <h3>Двустаен апартамент, Варна</h3>
+                        <p>Трошево, 150 000 лв.</p>
+                        <a href="properties.html#sales" class="btn">Виж повече</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="offers rental">
+            <div class="container">
+                <h2>Примерни оферти за наем</h2>
+                <div class="offer-list">
+                    <div class="offer-item">
+                        <img src="offer1.jpg" alt="Наем 1">
+                        <h3>Едностаен апартамент, Варна</h3>
+                        <p>Чайка, 400 лв./месец</p>
+                        <a href="properties.html#rentals" class="btn">Виж повече</a>
+                    </div>
+                    <div class="offer-item">
+                        <img src="offer2.jpg" alt="Наем 2">
+                        <h3>Двустаен апартамент, София</h3>
+                        <p>Студентски град, 600 лв./месец</p>
+                        <a href="properties.html#rentals" class="btn">Виж повече</a>
+                    </div>
+                    <div class="offer-item">
+                        <img src="offer3.jpg" alt="Наем 2">
+                        <h3>Двустаен апартамент, Варна</h3>
+                        <p>Левски, 600 лв./месец</p>
+                        <a href="properties.html#rentals" class="btn">Виж повече</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="container">
+        <p>&copy; 2025 Недвижими имоти | <a href="privacy.html">Privacy Policy</a></p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> бул. „Княз Борис“ 1, ет. 4, офис 8, Варна</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+359875336767">+359 87 533 6767</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:estate@dayana.com">estate@dayana.com</a></p>
+            <p><i class="fas fa-clock"></i> Понеделник - Петък, 09:00 - 18:30</p>
+        </div>
+    </div>
+</footer>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
+

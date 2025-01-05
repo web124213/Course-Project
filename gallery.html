@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерия</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="Company Logo">
+    </a>
+</div>
+            <h1>Галерия</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="properties.html">Имоти</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Dayana Estate - Галерия</h1>
+
+    <section class="gallery">
+        <div class="slideshow-container">
+           
+            <div class="slide">
+                <img src="gallery1.jpg" alt="Снимка 1">
+            </div>
+            <div class="slide">
+                <img src="gallery2.jpg" alt="Снимка 2">
+            </div>
+            <div class="slide">
+                <img src="gallery3.jpg" alt="Снимка 3">
+            </div>
+           
+
+            
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <p>&copy; 2025 Недвижими имоти | <a href="privacy.html">Privacy Policy</a></p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> бул. „Княз Борис“ 1, ет. 4, офис 8, Варна</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+359875336767">+359 87 533 6767</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:estate@dayana.com">estate@dayana.com</a></p>
+            <p><i class="fas fa-clock"></i> Понеделник - Петък, 09:00 - 18:30</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
